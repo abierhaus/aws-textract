@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>aws_textract</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.101" />
+    <PackageReference Include="AWSSDK.S3" Version="3.5.3.8" />
+    <PackageReference Include="AWSSDK.Textract" Version="3.5.1.12" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Files\Amazon-Textract-Pdf.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\TheLifeAndWorkOfFredsonBrowers.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
